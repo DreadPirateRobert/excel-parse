@@ -1,0 +1,32 @@
+ <div>
+    <p>excel-parse works!</p>
+    <input type="file" id="input" />
+    <input  id="colname" type="text" [(ngModel)]="colname" />
+    <button (click)="performAggregation()"> Aggregate </button>
+
+    <div>
+        <table style="width:100%" *ngFor="let tableDat of tableData">
+
+            <tr *ngFor="let element of tableDat; let i = index">
+                <td *ngFor="let item of element; let j = index">
+                    {{ item }}
+                </td>
+            </tr>
+        </table> 
+    </div>
+
+    <div class="box-container"> 
+        <br>
+        SUM: {{ sum }}
+
+        <br>
+        AVERAGE: {{ average }}
+
+        <br>
+        MAX NUM: {{ maxnum }}
+
+        <br>
+        MIN NUM: {{ minnum }}
+    </div>
+
+<div>

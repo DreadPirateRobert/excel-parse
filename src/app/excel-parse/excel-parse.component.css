@@ -1,0 +1,11 @@
+table, th, td {
+    border: 2px solid black;
+}
+
+table {
+    margin: 20px;
+}
+
+.box-container {
+    display: block;
+}
